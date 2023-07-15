@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(215, 219, 159, 0.438);
+}
+
+.UserName h1 {
+    letter-spacing: 1px;
+    color: rgba(6, 6, 59, 0.945);
+    margin: 30px;
+}
+
+.UserName small {
+    font-weight: medium;
+    margin: 10px;
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.header nav ul{
+   list-style: none;
+   padding: 30px;
+   
+}
+.header nav ul li{
+    text-decoration: none;
+    color: black;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    background: rgba(59, 11, 11, 0.726);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -100px;
+    left: 60px;
+    letter-spacing: 1px;
+}

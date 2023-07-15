@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './styles.css'
 
 /** props stands for properties and is being used to pass data from one component to another and mostly from parent component to child component . 
  * In short props are data carrier or the means to transport data. 
@@ -12,7 +13,7 @@ import ReactDOM from 'react-dom';
  */
   const User = (props) =>{
     return (
-      <div>
+      <div className='UserName'>
           <h1>
             {props.firstName}
             {props.lastName}
@@ -22,5 +23,29 @@ import ReactDOM from 'react-dom';
     )
   }
 
+  const Header = (props) =>{
+    return (
+      <header className='header'>
+        <nav>
+          <ul><li><a href="#.com">{props.Home}</a></li></ul>
+          <ul><li><a href="#.com">{props.About}</a></li></ul>
+          <ul><li><a href="#.com">{props.Contact}</a></li></ul>
+          <ul><li><a href="#.com">{props.Preferences}</a></li></ul>
+        </nav>
+      </header>
+        
+    )
+  } 
+
+  const App = () =>{
+    return(
+      <div>
+          {<User firstName= 'Prince' lastName = 'Hope'  country = 'Ethiopia'/>}
+          {<Header Home = 'Home' About = 'About' Contact ='Contact' Preferences = 'Preferences'/>}
+      </div>
+      
+    )
+  }
+
 const rootElement = document.getElementById('root');
-ReactDOM.render(<User firstName= 'Prince' lastName = 'Hope'  country = 'Ethiopia'/>, rootElement)
+ReactDOM.render(<App/>, rootElement)

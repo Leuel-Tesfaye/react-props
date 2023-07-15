@@ -50,3 +50,28 @@ body{
     left: 60px;
     letter-spacing: 1px;
 }
+
+.skills {
+    margin-left: 40px;
+}
+.skills ul {
+    padding: 10px;
+    list-style: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.skills ul li {
+    padding: 10px;
+}
+
+button{
+    padding: 10px 30px;
+    margin-left: 30px;
+    background-color: blue;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+
+}

@@ -37,11 +37,37 @@ import './styles.css'
     )
   } 
 
+  const Skills = (props) =>{
+    return (
+      <div className='skills'>
+        <ul>
+          <li>
+          {props.Skills}
+          </li>
+        </ul>
+      </div>
+    )
+  }
+
+  const Click = (props) =>{
+      const greetPeople = () =>{
+        alert('welcome to 30 days of javascript')
+      }
+      return (
+        <div>
+          <button onClick={greetPeople}>Greet People</button>
+        </div>
+      )
+  }
+
+
   const App = () =>{
     return(
       <div>
           {<User firstName= 'Prince' lastName = 'Hope'  country = 'Ethiopia'/>}
           {<Header Home = 'Home' About = 'About' Contact ='Contact' Preferences = 'Preferences'/>}
+          {<Skills Skills={['Html', ' ', 'Css' , ' ', 'Javascript' ,' ','React']}/>}
+          {<Click/>  }
       </div>
       
     )
